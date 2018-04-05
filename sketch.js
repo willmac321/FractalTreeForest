@@ -1,8 +1,8 @@
-var depth=10;
+var depth=12;
 var arr=[];
-var totCount=8;
+var totCount=10;
 function setup(){
-    createCanvas(1000,1000);
+    createCanvas(500,500);
     for(let i=1;i<totCount+1;i++){
       arr[i]=new fractalArray(i);
     }

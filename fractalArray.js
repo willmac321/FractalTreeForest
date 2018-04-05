@@ -1,5 +1,5 @@
 function fractalArray(co){
-  this.depth=ceil(random(depth));
+  this.depth=ceil(random(depth)+1);
   let res=(width/2)/factorial(this.depth);
   let r=random(255);
   let g=random(255);
@@ -11,8 +11,8 @@ function fractalArray(co){
   //  res=(width-10)/factorial(depth);
 
   push();
-    translate(width/res+width/totCount*(co-1),-height/factorial(depth)-abs(seed)*res);
-    this.drawLine(0,height,0,height-this.depth*res-height/(res*co/abs(seed)),0, Math.PI/2, this.depth);
+    translate(width/res+width/totCount*(co-1),0);
+    this.drawLine(0,height,0,height-height/(res/abs(seed)),0, Math.PI/2, this.depth);
 ;
     r=modColor(1+r);
     g=modColor(1+g);
