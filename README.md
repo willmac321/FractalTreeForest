@@ -1,2 +1,1 @@
-# FractalTree
 # FractalTreeForest
